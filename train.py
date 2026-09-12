@@ -1,7 +1,6 @@
 from sklearn.linear_model import LinearRegression
 import pickle
 
-# 학습 데이터
 X = [
     [50, 1],
     [60, 2],
@@ -11,7 +10,6 @@ X = [
     [100, 4],
 ]
 
-# 집값 (억원)
 y = [
     3.0,
     3.8,
