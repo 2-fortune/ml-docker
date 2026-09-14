@@ -36,4 +36,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: 2-fortune/ml-fastapi:latest
+          tags: 2fortune/ml-fastapi:latest
