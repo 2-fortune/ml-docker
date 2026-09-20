@@ -45,3 +45,9 @@ jobs:
           tags: |
             2fortune/ml-fastapi:latest
             2fortune/ml-fastapi:${{ github.sha }}
+      - name: Deploy
+        run: |
+          cd ~/mlops-deploy
+          export IMAGE_TAG="${GITHUB_SHA}"
+          docker compose pull
+          docker compose up -d
